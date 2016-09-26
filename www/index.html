@@ -33,67 +33,185 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <title>Sudoku Solver</title>
     </head>
     <body>
-	<div class="row center">
-		<table class="table ">
-		  <tbody>
-			<tr>
-			  <td id="00">1</td>
-			  <td>1</td>
-			  <td>1</td>
-			  
-			  <td>1</td>
-			  <td>1</td>
-			  <td>1</td>
-			  
-			  <td>1</td>
-			  <td>1</td>
-			  <td>1</td>
-			  
-			</tr>
-			<tr>
-
-			<tr>
-			  <td>1</td>
-			  <td>1</td>
-			  <td>1</td>
-			  
-			  <td>1</td>
-			  <td>1</td>
-			  <td>1</td>
-			  
-			  <td>1</td>
-			  <td>1</td>
-			  <td>1</td>
-			  
-			</tr>
-			<tr>
-			
-			<tr>
-			  <td>1</td>
-			  <td>1</td>
-			  <td>1</td>
-			  
-			  <td>1</td>
-			  <td>1</td>
-			  <td>1</td>
-			  
-			  <td>1</td>
-			  <td>1</td>
-			  <td>1</td>
-			  
-			</tr>
-			<tr>
-
-		  </tbody>
-		</table>
+	
+	<div class="page-header">
+		<center><h1>Sudoku Solver</h1><center>
 	</div>
+	
+	
+		<!--			Top 3 Rows of the Matrix		-->
+	<div class="text-center">
+		<div class="outer_box">
+			<!--			Row 1 of the Matrix		-->
+			<input id="00" class="input_box cube2" type="number" min="1" max="9">
+			<input id="01" class="input_box cube2" type="number" min="1" max="9">
+			<input id="02" class="input_box cube2" type="number" min="1" max="9">
+			
+			<input id="03" class="input_box cube1" type="number" min="1" max="9">
+			<input id="04" class="input_box cube1" type="number" min="1" max="9">
+			<input id="05" class="input_box cube1" type="number" min="1" max="9">
+			
+			<input id="06" class="input_box cube2" type="number" min="1" max="9">
+			<input id="07" class="input_box cube2" type="number" min="1" max="9">
+			<input id="08" class="input_box cube2" type="number" min="1" max="9">
+		</div>
+		
+		<div class="outer_box">
+			<!--			Row 2 of the Matrix		-->
+			<input id="10" class="input_box cube2" type="number" min="1" max="9">
+			<input id="11" class="input_box cube2" type="number" min="1" max="9">
+			<input id="12" class="input_box cube2" type="number" min="1" max="9">
+			
+			<input id="13" class="input_box cube1" type="number" min="1" max="9">
+			<input id="14" class="input_box cube1" type="number" min="1" max="9">
+			<input id="15" class="input_box cube1" type="number" min="1" max="9">
+			
+			<input id="16" class="input_box cube2" type="number" min="1" max="9">
+			<input id="17" class="input_box cube2" type="number" min="1" max="9">
+			<input id="18" class="input_box cube2" type="number" min="1" max="9">
+		</div>
+		
+		<div class="outer_box">
+			<!--			Row 3 of the Matrix		-->
+			<input id="20" class="input_box cube2" type="number" min="1" max="9">
+			<input id="21" class="input_box cube2" type="number" min="1" max="9">
+			<input id="22" class="input_box cube2" type="number" min="1" max="9">
+			
+			<input id="23" class="input_box cube1" type="number" min="1" max="9">
+			<input id="24" class="input_box cube1" type="number" min="1" max="9">
+			<input id="25" class="input_box cube1" type="number" min="1" max="9">
+			
+			<input id="26" class="input_box cube2" type="number" min="1" max="9">
+			<input id="27" class="input_box cube2" type="number" min="1" max="9">
+			<input id="28" class="input_box cube2" type="number" min="1" max="9">
+		</div>
+		
+	</div>
+	
+	
+	
+	<!--			Middle 3 Rows of the Matrix		-->
+	<div class="text-center">
+		<div class="outer_box">
+			<!--			Row 4 of the Matrix		-->
+			<input id="30" class="input_box cube1" type="number" min="1" max="9">
+			<input id="31" class="input_box cube1" type="number" min="1" max="9">
+			<input id="32" class="input_box cube1" type="number" min="1" max="9">
+			
+			<input id="33" class="input_box cube2" type="number" min="1" max="9">
+			<input id="34" class="input_box cube2" type="number" min="1" max="9">
+			<input id="35" class="input_box cube2" type="number" min="1" max="9">
+			
+			<input id="36" class="input_box cube1" type="number" min="1" max="9">
+			<input id="37" class="input_box cube1" type="number" min="1" max="9">
+			<input id="38" class="input_box cube1" type="number" min="1" max="9">
+		</div>
+		
+		<div class="outer_box">
+			<!--			Row 5 of the Matrix		-->
+			<input id="40" class="input_box cube1" type="number" min="1" max="9">
+			<input id="41" class="input_box cube1" type="number" min="1" max="9">
+			<input id="42" class="input_box cube1" type="number" min="1" max="9">
+			
+			<input id="43" class="input_box cube2" type="number" min="1" max="9">
+			<input id="44" class="input_box cube2" type="number" min="1" max="9">
+			<input id="45" class="input_box cube2" type="number" min="1" max="9">
+			
+			<input id="46" class="input_box cube1" type="number" min="1" max="9">
+			<input id="47" class="input_box cube1" type="number" min="1" max="9">
+			<input id="48" class="input_box cube1" type="number" min="1" max="9">
+		</div>
+		
+		<div class="outer_box">
+			<!--			Row 6 of the Matrix		-->
+			<input id="50" class="input_box cube1" type="number" min="1" max="9">
+			<input id="51" class="input_box cube1" type="number" min="1" max="9">
+			<input id="52" class="input_box cube1" type="number" min="1" max="9">
+			
+			<input id="53" class="input_box cube2" type="number" min="1" max="9">
+			<input id="54" class="input_box cube2" type="number" min="1" max="9">
+			<input id="55" class="input_box cube2" type="number" min="1" max="9">
+			
+			<input id="56" class="input_box cube1" type="number" min="1" max="9">
+			<input id="57" class="input_box cube1" type="number" min="1" max="9">
+			<input id="58" class="input_box cube1" type="number" min="1" max="9">
+		</div>
+		
+	</div>
+	
+	
+	
+	
+	
+	<!--			Bottom 3 Rows of the Matrix		-->
+	<div class="text-center">
+		<div class="outer_box">
+			<!--			Row 7 of the Matrix		-->
+			<input id="60" class="input_box cube2" type="number" min="1" max="9">
+			<input id="61" class="input_box cube2" type="number" min="1" max="9">
+			<input id="62" class="input_box cube2" type="number" min="1" max="9">
+			
+			<input id="63" class="input_box cube1" type="number" min="1" max="9">
+			<input id="64" class="input_box cube1" type="number" min="1" max="9">
+			<input id="65" class="input_box cube1" type="number" min="1" max="9">
+			
+			<input id="66" class="input_box cube2" type="number" min="1" max="9">
+			<input id="67" class="input_box cube2" type="number" min="1" max="9">
+			<input id="68" class="input_box cube2" type="number" min="1" max="9">
+		</div>
+		
+		<div class="outer_box">
+			<!--			Row 8 of the Matrix		-->
+			<input id="70" class="input_box cube2" type="number" min="1" max="9">
+			<input id="71" class="input_box cube2" type="number" min="1" max="9">
+			<input id="72" class="input_box cube2" type="number" min="1" max="9">
+			
+			<input id="73" class="input_box cube1" type="number" min="1" max="9">
+			<input id="74" class="input_box cube1" type="number" min="1" max="9">
+			<input id="75" class="input_box cube1" type="number" min="1" max="9">
+			
+			<input id="76" class="input_box cube2" type="number" min="1" max="9">
+			<input id="77" class="input_box cube2" type="number" min="1" max="9">
+			<input id="78" class="input_box cube2" type="number" min="1" max="9">
+		</div>
+		
+		<div class="outer_box">
+			<!--			Row 9 of the Matrix		-->
+			<input id="80" class="input_box cube2" type="number" min="1" max="9">
+			<input id="81" class="input_box cube2" type="number" min="1" max="9">
+			<input id="82" class="input_box cube2" type="number" min="1" max="9">
+			
+			<input id="83" class="input_box cube1" type="number" min="1" max="9">
+			<input id="84" class="input_box cube1" type="number" min="1" max="9">
+			<input id="85" class="input_box cube1" type="number" min="1" max="9">
+			
+			<input id="86" class="input_box cube2" type="number" min="1" max="9">
+			<input id="87" class="input_box cube2" type="number" min="1" max="9">
+			<input id="88" class="input_box cube2" type="number" min="1" max="9">
+		</div>
+		
+	</div>
+	
+	<center>
+		
+	<button id="solve_btn" type="button" class="btn btn-success">Solve Puzzle</button>
+		
+		
+		
+	</center>
+	
 
     </body>
 
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/tether.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
 </html>
