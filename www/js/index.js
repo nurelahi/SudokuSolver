@@ -113,9 +113,18 @@ function input(){
 	}
 	
 	
+	navigator.notification.alert(
+    'You are the winner!',  // message
+    alertDismissed,         // callback
+    'Game Over',            // title
+    'Done'                  // buttonName
+);
+	
+	
 	
 }
 
+function alertDismissed();
 
 
 function process_cell (i, j){
