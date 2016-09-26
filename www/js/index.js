@@ -114,10 +114,10 @@ function input(){
 	
 	
 	navigator.notification.alert(
-    'You are the winner!',  // message
-    alertDismissed,         // callback
-    'Game Over',            // title
-    'Done'                  // buttonName
+    'The puzzle has been successfully solved!',  // message
+    null,         // callback
+    'Awesome!',            // title
+    'OK'                  // buttonName
 );
 	
 	
