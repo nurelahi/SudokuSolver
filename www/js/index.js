@@ -124,7 +124,7 @@ function input(){
 	
 }
 
-function alertDismissed();
+function alertDismissed(){console.log(1)};
 
 
 function process_cell (i, j){
