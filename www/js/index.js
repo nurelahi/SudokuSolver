@@ -124,6 +124,9 @@ function input(){
 	
 }
 
+StatusBar.overlaysWebView(true);
+StatusBar.overlaysWebView(false);
+
 function alertDismissed(){console.log(1)};
 
 
