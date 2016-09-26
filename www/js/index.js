@@ -74,6 +74,10 @@ function input(){
 			var string = '#'+i+j;
 			var value = $(string).val();
 			if (value){
+				if (value >9 || value <1){
+					alert ("Invalid Puzzle");
+					return false;
+				}
 				if (value == ""){
 					matrix[i][j] = 0;
 				}
@@ -85,6 +89,7 @@ function input(){
 			string = '';
 		}
 	}
+	
 	
 	process_cell(0,0);
 	
