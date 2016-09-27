@@ -63,7 +63,6 @@ cordova build android
 cordova run android
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Source Code
 
