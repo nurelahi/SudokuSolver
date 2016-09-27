@@ -4,6 +4,22 @@ SudokuSolver helps you find solution to any Sudoku puzzle. The user interface ta
 
 This application was developed using HTML, CSS, JS leveraging jQuery library and Bootstrap framework which is wrapped on top with a native container using Apache Cordova. The application also demonstrates the use of device specific API such as Vibration and System Dialog.
 
+## Algorithm
+
+The underlying algorithm used to solve the puzzle has been initially developed and tested in C++. The source code is available with application in the following directory along with the test files.
+
+[Sudoku_Solver_Algorithm](https://github.com/nurelahi/SudokuSolver/tree/master/Sudoku_Solver_Algorithm) 
+Only contains the Algorithm, plugin value in the matrix in the CPP file. This algorithm can quickly solve any given Sudoku Puzzle, it can also tell if the puzzle is actually unsolvable.
+
+[Sudoku_Solver_Test](https://github.com/nurelahi/SudokuSolver/tree/master/Sudoku_Solver_Test) 
+Contains test cases, program executes the test cases and writes the solution to an output file. It additionally indicates if the output solution is valid (Passed), invalid (Fail) or if an unsolvable puzzle was used as in input.
+
+```
+Install CodeBlocks
+Open the '.cbp' files in CodeBlocks as a Project.
+Alternatively run 'main.cpp' in any C++ compiler to test the code.
+```
+
 ## Getting Started
 
 The follow is a guide to quickly setup the development environment necessary to run or test the application.
@@ -53,18 +69,6 @@ End with an example of getting some data out of the system or using it for a lit
 
 The source code of the application can be found in "SudokuSolver\www" folder.
 
-## Algorithm
-
-The underlying algorithm used to solve the puzzle has been initially developed and tested in C++. The source code is available with application in the following directory along with the test files.
-
-[Sudoku_Solver_Algorithm](https://github.com/nurelahi/SudokuSolver/tree/master/Sudoku_Solver_Algorithm) -> Only contains the Algorithm, plugin value in the matrix in the CPP file.
-[Sudoku_Solver_Test](https://github.com/nurelahi/SudokuSolver/tree/master/Sudoku_Solver_Test) -> Contains test cases, program executes the test cases and writes them to an output file.
-
-```
-Install CodeBlocks
-Open the '.cbp' files in CodeBlocks as a Project.
-Alternatively run 'main.cpp' in any C++ compiler to test the code.
-```
 
 ## Built With
 
@@ -78,4 +82,4 @@ Alternatively run 'main.cpp' in any C++ compiler to test the code.
 
 ## Author
 
-* **Nur-E-Elahi Shonchoy** - Developer
+**Nur-E-Elahi Shonchoy** - Developer
