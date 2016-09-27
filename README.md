@@ -9,9 +9,11 @@ This application was developed using HTML, CSS, JS leveraging jQuery library and
 The underlying algorithm used to solve the puzzle has been initially developed and tested in C++. The source code is available with application in the following directory along with the test files.
 
 [Sudoku_Solver_Algorithm](https://github.com/nurelahi/SudokuSolver/tree/master/Sudoku_Solver_Algorithm) 
+
 Only contains the Algorithm, plugin value in the matrix in the CPP file. This algorithm can quickly solve any given Sudoku Puzzle, it can also tell if the puzzle is actually unsolvable.
 
 [Sudoku_Solver_Test](https://github.com/nurelahi/SudokuSolver/tree/master/Sudoku_Solver_Test) 
+
 Contains test cases, program executes the test cases and writes the solution to an output file. It additionally indicates if the output solution is valid (Passed), invalid (Fail) or if an unsolvable puzzle was used as in input.
 
 ```
