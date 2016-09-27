@@ -57,8 +57,13 @@ The source code of the application can be found in "SudokuSolver\www" folder.
 
 The underlying algorithm used to solve the puzzle has been initially developed and tested in C++. The source code is available with application in the following directory along with the test files.
 
-[Sudoku_Solver_Algorithm](https://github.com/nurelahi/SudokuSolver/tree/master/Sudoku_Solver_Algorithm)
+[Sudoku_Solver_Algorithm](https://github.com/nurelahi/SudokuSolver/tree/master/Sudoku_Solver_Algorithm) -> Only contains the Algorithm, plugin value in the matrix in the CPP file.
+[Sudoku_Solver_Test](https://github.com/nurelahi/SudokuSolver/tree/master/Sudoku_Solver_Test) -> Contains test cases, program executes the test cases and writes them to an output file.
+
 ```
+Install CodeBlocks
+Open the '.cbp' files in CodeBlocks as a Project.
+Alternatively run 'main.cpp' in any C++ compiler to test the code.
 ```
 
 ## Built With
