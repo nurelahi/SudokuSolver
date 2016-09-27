@@ -57,7 +57,7 @@ The source code of the application can be found in "SudokuSolver\www" folder.
 
 The underlying algorithm used to solve the puzzle has been initially developed and tested in C++. The source code is available with application in the following directory along with the test files.
 ```
-SudokuSolver\CPP
+[Sudoku_Solver_Algorithm](https://github.com/nurelahi/SudokuSolver/tree/master/Sudoku_Solver_Algorithm)
 ```
 
 ## Built With
