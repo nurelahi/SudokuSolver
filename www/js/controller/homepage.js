@@ -22,8 +22,17 @@ sudokuSolver.controller.homepage = {
 			sudokuSolver.controller.homepage.generateSolution();
 		}
 		else{
-			console.log("Invalid");
+			console.log("Input Sudoku is invalid");
+			navigator.notification.confirm('Your Sudoku input is not valid!', sudokuSolver.controller.homepage.invalidCallback, 'Invalid Puzzle!', ['Clear Board', 'Cancel']);
+			 
 		}	
+	},
+	
+	invalidCallback: function (choice){
+		if (choice == 1){
+			sudokuSolver.controller.homepage.clear();
+		}
+		// else no nothing
 	},
 	
 	generateSolution: function(){

@@ -19,57 +19,45 @@
 -->
 <html>
     <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
+        <title>Sudoku Solver</title>
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        
+		<!-- CSS Source -->
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<!-- CSS Libraries -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <title>Sudoku Solver</title>
-		
-		
 
-
-	
     </head>
     <body>
 
-	<div class="page-header">
-		<center><h1>Sudoku Solver</h1><center>
-	</div>
-	
-	<div id = "sudoku_grid" class="text-center">
-	</div>
-	
-	
-	<center>
-		<button id="solve_btn" type="button" class="btn btn-success">Solve</button>
-		<button id="clear_btn" type="button" class="btn btn-success">Clear</button>
-	</center>
-	
+		<div class="page-header">
+			<center>
+				<h1>Sudoku Solver</h1>
+				<p>Enter the current state of a Sudoku Puzzle in the grid below and hit Solve to get the solution</p>
+			<center>
+		</div>
+		
+		<div id = "sudoku_grid" class="text-center"></div>
+		
+		<center>
+			<button id="solve_btn" type="button" class="btn btn-success">Solve</button>
+			<button id="clear_btn" type="button" class="btn btn-success">Clear</button>
+		</center>
 
     </body>
 
 	<script type="text/javascript" src="cordova.js"></script>
-
+	<!-- JS Libraries -->
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/tether.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+	<!-- JS Source -->
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/view/homepage.js"></script>
 	<script type="text/javascript" src="js/application/homepage.js"></script>
 	<script type="text/javascript" src="js/controller/homepage.js"></script>
-	
-
 
 </html>

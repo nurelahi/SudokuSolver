@@ -1,23 +1,26 @@
-/* Empty. Add your own CSS if you like */
+/* 
+	@Author: Nur-E-Elahi Shonchoy
+	CSS used in the index page.
+*/
 
 
 
 input[type=number] {
 	border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
 	text-align: center;
 	width: 30px;
 	height: 30px;
 	display:inline;
 	padding:0;
+	margin: 1px 1px;
+}
 
+p {
+	margin:2%;
 }
 
 
-
-.table {
-	margin: 0 auto; 
-}
 .cube1{
 	background-color:white;
 
@@ -35,8 +38,18 @@ input[type=number] {
 	text-align: center;
 }
 
+.input_box {
+	//width:30px;
+}
 
+.outer_box {
+		margin: 0px auto;
+		text-align: center;
+}
 
+.page-header{
+	padding-top: 50px;
+}
 
 #solve_btn {
 	margin-top: 18px;
@@ -71,7 +84,7 @@ and (max-device-width : 320px) {
 /* Add Responsiveness for buttons in larger screen sizes */
 
 @media only screen 
-and (min-device-width : 600px) {
+and (min-device-width : 640px) {
 	#solve_btn {
 		margin-top: 18px;
 		width: 30%;
@@ -101,21 +114,6 @@ and (min-device-width : 600px) {
 }
 
 
-.input_box {
-	//width:30px;
-}
-
-.sudoku_box{
-	  top: 50%;
-  left: 50%;
-}
-
-.outer_box {
-		margin: 2px auto;
-		text-align: center;
-}
-
-
 
 
 /* Remove Input Number Spinner from Chrome(webkit)/Firefox(Moz) based Browser */
@@ -130,6 +128,3 @@ input[type="number"] {
 }
 
 
-.page-header{
-	padding-top: 50px;
-}
