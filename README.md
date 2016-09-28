@@ -21,7 +21,7 @@ Install CodeBlocks
 Open the '.cbp' files in CodeBlocks as a Project.
 Alternatively run 'main.cpp' in any C++ compiler to test the code.
 ```
-The following testcases were used from  [Sudopedia](http://sudopedia.enjoysudoku.com/Test_Cases.html)
+The following testcases are available in the package, feel free to add more!
 
  1. Sudoku with Full Grid filled up
  2. Sudoku with One cell missing
