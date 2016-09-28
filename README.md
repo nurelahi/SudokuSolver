@@ -21,6 +21,13 @@ Install CodeBlocks
 Open the '.cbp' files in CodeBlocks as a Project.
 Alternatively run 'main.cpp' in any C++ compiler to test the code.
 ```
+The following Test Cases are available in the package
+1 - Sudoku with Full Grid filled up 
+2 - Sudoku with One cell missing
+3 - Sudoku with only 1 possible solution
+4 - Typical Sudoku Grid
+5 - Unsolvavble Sudoku Puzzle 
+Test cases are collected from [Sudopedia](http://sudopedia.enjoysudoku.com/Test_Cases.html)
 
 ## Getting Started
 
@@ -50,7 +57,7 @@ cordova platform add ios --save
 cordova requirements
 
 ```
-Once the requirements command is ran, it should give a list of dependencies which is required to build the project on the selected platform. Make sure all the dependencies are installed in the system *(such as Xcode, Android SDK etc)* before proceeding.
+Once the requirements command is runs, it should give a list of dependencies which is required to build the project on the selected platform. Make sure all the dependencies are installed in the system *(such as Xcode, Android SDK etc)* before proceeding.
 ```
 cordova build ios
 cordova emulate ios
