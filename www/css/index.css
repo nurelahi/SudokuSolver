@@ -22,16 +22,21 @@ input[type=number] {
 	background-color:white;
 
 }
+.cube2{
+	background-color:#61A629;
+}
+
+.cell-highlight{
+	color: red;
+	font-weight: bold;
+}
 
 .text-center {
 	text-align: center;
 }
 
 
-.cube2{
-	background-color:#61A629;
-		font-color:white;
-}
+
 
 #solve_btn {
 	margin-top: 18px;

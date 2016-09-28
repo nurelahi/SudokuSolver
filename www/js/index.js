@@ -16,6 +16,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+ 
+sudokuSolver = {
+	view:{},
+	controller:{},
+	application:{}
+}
+
+ 
 var app = {
     // Application Constructor
     initialize: function() {
@@ -50,7 +58,7 @@ var app = {
 
 app.initialize();
 
-document.getElementById("solve_btn").addEventListener("click", input);
+//document.getElementById("solve_btn").addEventListener("click", input);
 
 
 var matrix = [

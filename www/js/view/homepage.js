@@ -1,30 +1,42 @@
-function lol ()
-{
-	alert ("hello");
-}
-
-
-sudokuSolver.view.homepage = ({
-	constructor: function(){
-		console.log("asdad");
-	},
+/*
+	@Author: Nur-E-Elahi Shonchoy
+*/
+sudokuSolver.view.homepage = {
 	
+	// This function creates the Sudoku Matrix
 	createSudoku: function (){
+		console.log("createSudoku Called()");
 		var input_tag;
-		for (var i=0; i<9; i++){
-			for (var j=0; j<9; j++){
-				if (j<3 || j>5){
-					input_tag = '<input id="'+i+j+'" class="input_box cube2" type="number" min="1" max="9">';
-					$("#puzzle-grid").append(input_tag);
-				}
-				else{
-					input_tag = '<input id="'+i+j+'" class="input_box cube2" type="number" min="1" max="9">';
-					$("#puzzle-grid").append(input_tag);
-				}
+		for (i=0; i<9; i++){
+			$("#sudoku_grid").append('<div class="outer_box">');
+			for (j=0; j<9; j++){
+				input_tag = '<input id="'+i+j+'" type="number" min="1" max="9">';
+				//console.log(input_tag);
+				$("#sudoku_grid").append(input_tag);
 				input_tag = '';
 			}
 		}
+		this.colorSudoku();
 	},
 	
-	CLASS_NAME: 'sudokuSolver.view.homepage'
-});
+	// Colors the 3x3 cells based on the starting i,j
+	colorSudoku: function(){
+		this.applyColor(0,0);
+		this.applyColor(0,6);
+		this.applyColor(3,3);
+		this.applyColor(6,0);
+		this.applyColor(6,6);
+	},
+	
+	// Applies the color class the cell
+	applyColor: function(start_i, start_j){
+		var input_position;
+		for (i=start_i; i<start_i+3; i++){
+			for (j=start_j; j<start_j+3; j++){
+				input_position = '#'+i+j;
+				$(input_position).addClass("cube2")
+			}
+		}
+	}
+	
+};
