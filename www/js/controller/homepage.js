@@ -1,3 +1,7 @@
+/*
+	@Author: Nur-E-Elahi Shonchoy
+	CONTROLLER Logic for sudokuSolver homepage
+*/
 
 sudokuSolver.controller.homepage = {
 	
@@ -5,6 +9,7 @@ sudokuSolver.controller.homepage = {
 		console.log("Controller Init");
 		sudokuSolver.view.homepage.createSudoku();
 		$('#solve_btn').click(this.solve);
+		$('#clear_btn').click(this.clear);
 	},
 	
 	solve: function(){
@@ -30,6 +35,11 @@ sudokuSolver.controller.homepage = {
 		else{
 			//Solution is not found, return unsolvable Puzzle
 		}
+	},
+	
+	clear: function(){
+		console.log("Clear button was pressed");
+		sudokuSolver.application.homepage.clearMatrix();
 	}
 };
 

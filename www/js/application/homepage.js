@@ -1,5 +1,11 @@
+/*
+	@Author: Nur-E-Elahi Shonchoy
+	Model/Service/Application logic for the sudokuSolver homepage
+*/
+
 sudokuSolver.application.homepage = {
 	
+	// Initailize the global matrix
 	matrix : [
 		[0,0,0,   0,0,0,	0,0,0],
 		[0,0,0,   0,0,0,	0,0,0],
@@ -20,13 +26,28 @@ sudokuSolver.application.homepage = {
 		for (var i=0; i<9; i++){
 			for (var j=0; j<9; j++){
 				var locate = '#'+i+j;
+				$(locate).removeClass("cell-highlight");
 				var value = $(locate).val();
 					if (value == ""){
 						this.matrix[i][j] = 0;
 					}
 					else{
 						this.matrix[i][j] = value;
+						$(locate).addClass("cell-highlight");
 					}
+				locate = '';
+			}
+		}
+	},
+	
+	// Clears the current matrix
+	clearMatrix: function (){
+		console.log("clearMatrix() is called");
+		for (var i=0; i<9; i++){
+			for (var j=0; j<9; j++){
+				var locate = '#'+i+j;
+				$(locate).val('');
+				$(locate).removeClass("cell-highlight");
 				locate = '';
 			}
 		}
@@ -37,14 +58,14 @@ sudokuSolver.application.homepage = {
 		console.log("printMatrix() is called");
 		for (var i=0; i<9; i++){
 			for (var j=0; j<9; j++){
-				var string = '#'+i+j;
-				$(string).val(this.matrix[i][j]);
-				string = '';
+				var locate = '#'+i+j;
+				$(locate).val(this.matrix[i][j]);
+				locate = '';
 			}
 		}
 	},
 	
-	
+	// Processes each cell one by one till the last cell is filled
 	processCell: function (i, j){
 		if (i>8){
 			return true;

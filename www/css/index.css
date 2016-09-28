@@ -44,6 +44,12 @@ input[type=number] {
 	background-color: green;
 }
 
+#clear_btn {
+	margin-top: 18px;
+	width: 30%;
+	background-color: green;
+}
+
 
 /* Add Responsiveness for smaller screen sizes */
 
@@ -58,6 +64,39 @@ and (max-device-width : 320px) {
 	height: 8%;
 	display:inline;
 	padding:0;
+	}
+}
+
+
+/* Add Responsiveness for buttons in larger screen sizes */
+
+@media only screen 
+and (min-device-width : 600px) {
+	#solve_btn {
+		margin-top: 18px;
+		width: 30%;
+		font-size: 200%;
+		background-color: green;
+		margin-bottom: 6%;
+	}
+
+	#clear_btn {
+		margin-top: 18px;
+		width: 30%;
+		font-size: 200%;
+		background-color: green;
+		margin-bottom: 6%;
+	}
+	
+	input[type=number] {
+		border-style: solid;
+		border-width: 2px;
+		text-align: center;
+		width: 8%;
+		height: 11%;
+		display:inline;
+		padding-left:0;
+		font-size: 300%;
 	}
 }
 

@@ -1,6 +1,8 @@
 /*
 	@Author: Nur-E-Elahi Shonchoy
+	VIEW logic for the sudokuSolver homepage
 */
+
 sudokuSolver.view.homepage = {
 	
 	// This function creates the Sudoku Matrix
