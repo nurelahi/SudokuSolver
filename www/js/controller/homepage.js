@@ -23,8 +23,9 @@ sudokuSolver.controller.homepage = {
 		}
 		else{
 			console.log("Input Sudoku is invalid");
-			navigator.notification.confirm('Your Sudoku input is not valid!', sudokuSolver.controller.homepage.invalidCallback, 'Invalid Puzzle!', ['Clear Board', 'Cancel']);
-			 
+			var invalidinput = 'Your input puzzle does not follow the rules of Sudoku! Please enter a valid Sudoku puzzle and try again';
+			navigator.notification.confirm(invalidinput, sudokuSolver.controller.homepage.invalidCallback, 'Invalid Puzzle!', ['Clear Board', 'OK']);
+			navigator.vibrate(800);
 		}	
 	},
 	
@@ -42,10 +43,12 @@ sudokuSolver.controller.homepage = {
 			sudokuSolver.application.homepage.printMatrix();
 			var notification = 'The puzzle has been successfully solved on your '+device.model+' device running on '+device.platform+' platform!';
 			navigator.notification.alert(notification, null, 'Success', 'Awesome!');
+			navigator.vibrate(800);	// Device vibrates on successful solution
 		}
 		else{
 			console.log("Puzzle has no solution");
 			navigator.notification.alert('This puzzle has no solution', null, 'Sorry', 'Got it!');
+			navigator.vibrate(800);
 		}
 	},
 	
