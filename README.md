@@ -76,7 +76,7 @@ cordova run android
 
 ## Source Code
 
-The source code of the application can be found in "SudokuSolver\www" folder.
+The source code of the application can be found in [SudokuSolver\www](https://github.com/nurelahi/SudokuSolver/tree/master/www) folder.
 
 
 ## Built With
