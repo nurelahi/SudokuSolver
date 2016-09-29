@@ -119,6 +119,12 @@ cordova run android
 
 The source code of the application can be found in [SudokuSolver\www](https://github.com/nurelahi/SudokuSolver/tree/master/www) folder.
 
+## Screenshots
+
+[iPhone 6](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/iPhone%206.png)
+[iPhone 7 Plus](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/iPhone%206.png)
+[Ipad Pro - 12inch](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/iPad%20Pro.png)
+[Android - Nexus5](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/Anroid.PNG)
 
 ## Built With
 
@@ -133,3 +139,4 @@ The source code of the application can be found in [SudokuSolver\www](https://gi
 ## Author
 
 **Nur-E-Elahi Shonchoy** - Developer
+
