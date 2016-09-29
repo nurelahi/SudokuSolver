@@ -122,9 +122,13 @@ The source code of the application can be found in [SudokuSolver\www](https://gi
 ## Screenshots
 Screenshots taken showing responsiveness across cross platform devices of various screensizes.
 [iPhone 6](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/iPhone%206.png)
+
 [iPhone 7 Plus](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/iPhone%206.png)
+
 [iPad Mini](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/iPad%20Mini.PNG)
+
 [iPad Pro - 12inch](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/iPad%20Pro.png)
+
 [Android - Nexus5](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/Anroid.PNG)
 
 
