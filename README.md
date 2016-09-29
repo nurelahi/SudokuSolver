@@ -29,6 +29,32 @@ The following testcases are available in the package, feel free to add more!
  4. Typical Sudoku
  5. Unsolvavble Sudoku Puzzle
 
+## Implementation
+
+The algorithm was tested in C++ before being implemented on the project, the application itself is written in Javascript. The code is modular and separated in Application, View and Controller using object literals. Bootstrap UI Frame and jQuery along with CSS3 for beautification. Media Queries implemeted in the CSS to create responsive design for all screen sides. Basic layout of the project is as follows.
+
+#### View
+
+ - Creates Sudoku Grid Dynamically (9x9)
+ - Colors 3x3 matrix within the grid
+
+#### Controller
+
+ - Initializes the Grid
+ - Controlls input workflow
+ - Invokes appropriate service/application logic incase of errors
+ 
+#### Application/Model
+ - Manipulates Global Matrix
+ - Implements solver algorithm
+ - Clear matrix function
+ - Check validity of input matrix
+
+## Device API Usage
+
+ - Dialog box - All notification was shown using system dialog box API.
+ - Device Vibration - The device vibrates for 0.8s and provides haptic feedback when the puzzle is solved.
+ - Device Information - The name of the device (LG, Ipad etc) the user is using and the platform (iOS, Android etc) is shown to the user on the message which is returned when puzzle is solved.
 
 ## Getting Started
 
@@ -59,12 +85,14 @@ cordova requirements
 
 ```
 Once the requirements command is runs, it should give a list of dependencies which is required to build the project on the selected platform. Make sure all the dependencies are installed in the system *(such as Xcode, Android SDK etc)* before proceeding.
+### Simulation / Testing on Device
+This should emulate the application in the simulator, in order to run on an device make sure the target is connected before running the commands .
 ```
 cordova build ios
 cordova emulate ios
 ```
 
-This should emulate the application in the simulator. Commands to generate the Android version is given below.
+Commands to deploy application in Android AVD or device is given below.
 
 ```
 cordova platform add android --save
@@ -73,6 +101,19 @@ cordova build android
 cordova run android
 ```
 
+## User Workflow / Features
+
+ - User enters valid sudoku puzzle
+	 - Solve button fills the grid with valid solution
+	 - Original inputs are show in Red rest are Black
+	 - Application returns error if the input matrix is invalid
+	 - Clear button clears the matrixS
+ - User enters invalid sudoku puzzle
+	 - Pressing solve button opens a dialog with notifies user that the input was invalid.
+	 - Only user entered cells are red
+	 - Dialog box has 2 option, clear matrix or press ok to exit dialog.
+ - User enters unsolvable sudoku puzzle
+	 - User gets a dialogue box stating that the puzzle is unsolvable, user can hit 'Got it' to go back to the previous view.
 
 ## Source Code
 
