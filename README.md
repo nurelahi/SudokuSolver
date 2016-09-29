@@ -133,3 +133,8 @@ The source code of the application can be found in [SudokuSolver\www](https://gi
 ## Author
 
 **Nur-E-Elahi Shonchoy** - Developer
+
+
+##Screenshots
+
+[!Android](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/Anroid.PNG)
