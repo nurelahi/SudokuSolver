@@ -1,6 +1,6 @@
 # SudokuSolver
 
-SudokuSolver helps you find solution to any Sudoku puzzle. The user interface takes in input of an unsolved state of a Sudoku puzzle and outputs a valid solution. If an invalid puzzle is entered an error message is returned to the user, the application additionally the user know if the puzzle is unsolvable. This is a hybrid app which is targetted towards iOS but also runs correctly in Android devices with different screen sizes.
+SudokuSolver helps you find solution to any Sudoku puzzle. The user interface takes in input of an unsolved state of a Sudoku puzzle and outputs a valid solution. If an invalid puzzle is entered an error message is returned to the user, the application additionally the user know if the puzzle is unsolvable. This is a hybrid app which is targetted towards iOS but also runs correctly in Android devices. SudokuSolver is fully responsive and runs in any and all screen sizes.
 
 This application was developed using HTML, CSS, JS leveraging jQuery library and Bootstrap UI Framework which is wrapped on top with a native container using Apache Cordova. The application also demonstrates the use of device specific API such as Vibration and System Dialog.
 
@@ -76,7 +76,7 @@ cordova run android
 
 ## Source Code
 
-The source code of the application can be found in "SudokuSolver\www" folder.
+The source code of the application can be found in [SudokuSolver\www](https://github.com/nurelahi/SudokuSolver/tree/master/www) folder.
 
 
 ## Built With
