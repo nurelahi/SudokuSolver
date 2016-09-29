@@ -122,9 +122,7 @@ You can use [WebStorm IDE](https://www.jetbrains.com/webstorm/) to open the proj
 ## Screenshots
 Screenshots taken showing responsiveness across cross platform devices of various screensizes.
 
-[iPhone 6](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/iPhone%206.png)
-
-[iPhone 7 Plus](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/iPhone%206.png)
+[iPhone 7 Plus](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/iPhone%207%20Plus.png)
 
 [iPad Mini](https://github.com/nurelahi/SudokuSolver/blob/master/screenshots/iPad%20Mini.PNG)
 
