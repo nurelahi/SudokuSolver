@@ -23,15 +23,15 @@ Alternatively run 'main.cpp' in any C++ compiler to test the code.
 ```
 The following testcases are available in the package, feel free to add more!
 
- 1. Sudoku with Full Grid filled up
- 2. Sudoku with One cell missing
+ 1. Sudoku with full grid filled up
+ 2. Sudoku with one cell missing
  3. Sudoku with only 1 possible solution
- 4. Typical Sudoku
- 5. Unsolvavble Sudoku Puzzle
+ 4. Typical sudoku puzzle
+ 5. Unsolvavble sudoku puzzle
 
 ## Implementation
 
-The algorithm was tested in C++ before being implemented on the project, the application itself is written in Javascript. The code is modular and separated in Application, View and Controller using object literals. Bootstrap UI Frame and jQuery along with CSS3 for beautification. Media Queries implemeted in the CSS to create responsive design for all screen sides. Basic layout of the project is as follows.
+The algorithm was tested in C++ before being implemented on the project, the application itself is written in Javascript. The logic is modular and separated into 'Application', 'View' and 'Controller' using object literals. Bootstrap UI Framework and jQuery is used in the project along with CSS3 for beautification. Media Queriesis  implemeted in the CSS to create responsive design for all screen sizes. The Basic layout of the project is as follows.
 
 #### View
 
@@ -118,6 +118,7 @@ cordova run android
 ## Source Code
 
 The source code of the application can be found in [SudokuSolver\www](https://github.com/nurelahi/SudokuSolver/tree/master/www) folder.
+You can use [WebStorm IDE](https://www.jetbrains.com/webstorm/) to open the project or any other JS IDE/Notepad to access the sourcecode.
 
 ## Screenshots
 Screenshots taken showing responsiveness across cross platform devices of various screensizes.
