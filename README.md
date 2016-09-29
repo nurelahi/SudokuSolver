@@ -82,7 +82,6 @@ git clone https://github.com/nurelahi/SudokuSolver.git
 cd SudokuSolver
 cordova platform add ios --save
 cordova requirements
-
 ```
 Once the requirements command is runs, it should give a list of dependencies which is required to build the project on the selected platform. Make sure all the dependencies are installed in the system *(such as Xcode, Android SDK etc)* before proceeding.
 ### Simulation / Testing on Device
