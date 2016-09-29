@@ -19,9 +19,9 @@
  
 sudokuSolver = {
 	view:{},
-	controller:{},
-	application:{}
-}
+	application:{},
+	controller:{}
+};
 
  
 var app = {

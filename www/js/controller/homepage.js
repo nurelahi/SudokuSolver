@@ -40,9 +40,12 @@ sudokuSolver.controller.homepage = {
 		if (sudokuSolver.application.homepage.processCell(0,0)){
 			//Solution Found
 			sudokuSolver.application.homepage.printMatrix();
+			var notification = 'The puzzle has been successfully solved on your '+device.model+' device running on '+device.platform+' platform!';
+			navigator.notification.alert(notification, null, 'Success', 'Awesome!');
 		}
 		else{
-			//Solution is not found, return unsolvable Puzzle
+			console.log("Puzzle has no solution");
+			navigator.notification.alert('This puzzle has no solution', null, 'Sorry', 'Got it!');
 		}
 	},
 	
