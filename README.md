@@ -41,7 +41,7 @@ The algorithm was tested in C++ before being implemented on the project, the app
 #### Controller
 
  - Initializes the Grid
- - Controlls input workflow
+ - Controls workflow
  - Invokes appropriate service/application logic incase of errors
  
 #### Application/Model
