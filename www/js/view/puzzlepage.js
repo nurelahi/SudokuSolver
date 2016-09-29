@@ -1,9 +1,9 @@
 /*
 	@Author: Nur-E-Elahi Shonchoy
-	VIEW logic for the sudokuSolver homepage
+	VIEW logic for the sudokuSolver puzzlePage
 */
 
-sudokuSolver.view.homepage = {
+sudokuSolver.view.puzzlePage = {
 	
 	// This function creates the Sudoku Matrix
 	createSudoku: function (){

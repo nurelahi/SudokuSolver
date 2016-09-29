@@ -1,9 +1,9 @@
 /*
 	@Author: Nur-E-Elahi Shonchoy
-	Model/Service/Application logic for the sudokuSolver homepage
+	Model/Service/Application logic for the sudokuSolver puzzlePage
 */
 
-sudokuSolver.application.homepage = {
+sudokuSolver.application.puzzlePage = {
 	
 	// Initailize the global matrix
 	matrix : [
