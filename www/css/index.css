@@ -3,6 +3,9 @@
 	CSS used in the index page.
 */
 
+body {
+	background-color:  #E5E4D7;
+}
 
 input[type=number] {
 	border-style: solid;

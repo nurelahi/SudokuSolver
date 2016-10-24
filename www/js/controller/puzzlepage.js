@@ -41,7 +41,7 @@ sudokuSolver.controller.puzzlePage = {
 		if (sudokuSolver.application.puzzlePage.processCell(0,0)){
 			//Solution Found
 			sudokuSolver.application.puzzlePage.printMatrix();
-			var notification = 'The puzzle has been successfully solved on your '+device.model+' device running on '+device.platform+' platform!';
+			var notification = 'The puzzle has been solved successfully!';
 			navigator.notification.alert(notification, null, 'Success', 'Awesome!');
 			navigator.vibrate(800);	// Device vibrates on successful solution
 		}
